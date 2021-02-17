@@ -31,7 +31,7 @@ function start(){
 	
 	
 	
-	tl.gotoAndPlay("f2-in")
+	// tl.gotoAndPlay("f2-in")
 
 	// return
 	
