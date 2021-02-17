@@ -41,12 +41,12 @@ function start() {
 	tl.add("f5-in", "-=.1");
 	tl.add(f5(), "f5-in");
 
+	// tl.gotoAndPlay("f5-in")
+
 	// return
 
 	tl.add("end-in", "+=1");
 	tl.add(end(), "end-in");
-
-	// tl.gotoAndPlay("f2-in")
 }
 
 function f2() {
@@ -89,7 +89,7 @@ function f5() {
 
 	tl.from(".frame5 .line", .5, { height: 0 }, "-=.3");
 
-	tl.from(".frame5 .t5_a", .3, { opacity: 0 }, "+=.4");
+	tl.from(".frame5 .t5_a", .3, { opacity: 0 }, "+=.2");
 	tl.from(".frame5 .t5_b", .3, { opacity: 0 }, "+=.3");
 
 	return tl;

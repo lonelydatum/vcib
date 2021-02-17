@@ -342,9 +342,9 @@ sup {
 }
 
 .frame5 .line.hor {
-  -webkit-transform: translate(-62px, 497px) scale(0.5) rotate(270deg);
-  -ms-transform: translate(-62px, 497px) scale(0.5) rotate(270deg);
-  transform: translate(-62px, 497px) scale(0.5) rotate(270deg);
+  -webkit-transform: translate(-62px, 501px) scale(0.5) rotate(270deg);
+  -ms-transform: translate(-62px, 501px) scale(0.5) rotate(270deg);
+  transform: translate(-62px, 501px) scale(0.5) rotate(270deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
