@@ -98,7 +98,7 @@ function f5() {
 
 function stag(list) {
 	var time = arguments.length <= 1 || arguments[1] === undefined ? .01 : arguments[1];
-	var delay = arguments.length <= 2 || arguments[2] === undefined ? .12 : arguments[2];
+	var delay = arguments.length <= 2 || arguments[2] === undefined ? .2 : arguments[2];
 
 	var tl = new TimelineMax();
 

@@ -104,7 +104,7 @@ function f5(){
 	return tl
 }
 
-function stag(list, time=.01, delay=.12){
+function stag(list, time=.01, delay=.2){
 	const tl = new TimelineMax()
 
 	list.map(abcd=>{
