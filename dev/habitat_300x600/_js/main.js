@@ -10,7 +10,7 @@ const tri = document.getElementById("tri")
 const tri_width = tri.offsetWidth
 
 
-const COPY = 1
+const COPY = 6
 
 
 function start(){
@@ -46,7 +46,7 @@ function start(){
 	tl.add("end-in", "+=1")
 	tl.add(end(), "end-in")
 	
-	tl.gotoAndPlay("f2-in")
+	// tl.gotoAndPlay("f2-in")
 	
 	
 	
@@ -62,8 +62,8 @@ function f2(){
 
 	tl.add("out", "+=2")
 	tl.to([".logo", ".plus"], .6, {opacity:0}, "out")
-	tl.to(".frame2 .tri_1", .3, {x:-130}, "out")
-	tl.from(".frame2 .tri_2", .3, {x:"+=130"}, "out")
+	tl.to(".frame2 .tri_1", .5, {x:-130}, "out")
+	tl.from(".frame2 .tri_2", .5, {x:"+=130"}, "out")
 	tl.to( ".photo", 3, {opacity:0}, "out" )
 
 	tl.add(stag(["t3_a", "t3_b", "t3_c", "t3_d", "t3_e", "t3_f", "t3_g"]), 3.3)
