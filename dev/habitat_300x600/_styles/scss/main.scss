@@ -21,13 +21,8 @@
 }
 
 .frame1{
-	@include pos(0, 0);
-	
+	@include pos(0, 0);	
 	background-color: #e82011;
-	.tri{
-		@include pos(300, 0);
-	}
-	
 }
 
 
@@ -35,19 +30,17 @@
 .frame2{
 	background-color: #e82011;
 	@include pos(0, 0);
-	// opacity: 0
+
+	.tri_2{
+		@include pos-scale(170, 0, -1);		
+	}
 }
 
-.frame3{
-	@include pos(0, 0);
-}
 
 
 .frame4{
 	@include pos(430, 0);
-	.tri{
-		@include pos-scale(-130, 0, -1);		
-	}
+	
 
 	background-color: #e82011;
 	.line.ver{
@@ -58,6 +51,7 @@
 		@include pos-scale-rotate(265, 200, .5, 270);
 	}
 }
+
 
 .frame5{
 	@include pos(1200, 0);
