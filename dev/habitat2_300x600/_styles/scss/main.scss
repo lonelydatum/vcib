@@ -32,16 +32,17 @@
 	background-color: white;
 	@include pos(0, 0);
 
-	.tri_2{
-		@include pos-scale(170, 0, -1);		
-	}
+	
 }
 
 
 
 .frame4{
 	@include pos(430, 0);
-	
+	.tri_2{
+		@include pos-scale(-130, 0, -1);		
+		// background-color: blue;
+	}
 
 	background-color: #e82011;
 	.north{

@@ -273,17 +273,6 @@ sup {
   position: absolute;
 }
 
-.frame2 .tri_2 {
-  -webkit-transform: translate(170px, 0px) scale(-1, -1);
-  -ms-transform: translate(170px, 0px) scale(-1, -1);
-  transform: translate(170px, 0px) scale(-1, -1);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-  position: absolute;
-}
-
 .frame4 {
   -webkit-transform: translate(430px, 0px);
   -ms-transform: translate(430px, 0px);
@@ -294,6 +283,17 @@ sup {
   perspective: 1000px;
   position: absolute;
   background-color: #e82011;
+}
+
+.frame4 .tri_2 {
+  -webkit-transform: translate(-130px, 0px) scale(-1, -1);
+  -ms-transform: translate(-130px, 0px) scale(-1, -1);
+  transform: translate(-130px, 0px) scale(-1, -1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
 }
 
 .frame4 .line.ver {

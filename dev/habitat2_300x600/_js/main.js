@@ -31,7 +31,7 @@ function start(){
 	
 	
 	
-	// tl.gotoAndPlay("f4-in")
+	tl.gotoAndPlay("f2-in")
 
 	// return
 	
@@ -64,7 +64,7 @@ function f2(){
 	tl.add("out", "+=2")
 	tl.to([".logo", ".plus"], .6, {opacity:0}, "out")
 	tl.to(".frame2 .tri_1", .5, {x:-130}, "out")
-	tl.from(".frame2 .tri_2", .5, {x:"+=130"}, "out")
+	
 	tl.to( ".photo", 3, {opacity:0}, "out" )
 	tl.from( ".photo_blur", .5, {opacity:0}, "out" )
 
@@ -78,7 +78,8 @@ function f2(){
 function f4(){
 	const tl = new TimelineMax()	
 	tl.set(".frame4", {opacity:1})
-	tl.to(".frame2", .5, {x:wMinus}, "f4-in") 
+	tl.to(".frame2", .5, {x:-430}, "f4-in") 
+	
 	tl.to(".frame4", .5, {x:0}, "f4-in")
 	tl.add(stag(["tag_1", "tag_2", "tag_3"]))
 
