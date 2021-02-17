@@ -59,13 +59,15 @@ function log_free(projectName){
         .pipe(replace("takanaClient.run({host: 'localhost:48626'});", ''))
         .pipe(replace("../_common/images/"+size+"/", ''))
         .pipe(replace("<title>", '<title>Created: '+moment().format('MMM D, h:mm')))
-        .on("end", function(){
-            for(var i=0;i<images.length;i++){            
-               gulp.src(images[i]).pipe(gulp.dest('./docs/deploy/'+projectName))
+        // .on("end", function(){
+        //     for(var i=0;i<images.length;i++){            
+        //        gulp.src(images[i]).pipe(gulp.dest('./docs/deploy/'+projectName))
                
-            }
-        })
-        .pipe(gulp.dest('./docs/deploy/'+projectName));        
+        //     }
+        // })
+        .pipe(gulp.dest('./docs/deploy/'+projectName))     
+        .pipe(zip(projectName+'.zip'))
+        .pipe(gulp.dest('./docs/zips'));
 
         return stream;   
 
