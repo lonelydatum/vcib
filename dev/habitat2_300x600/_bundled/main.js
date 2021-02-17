@@ -38,7 +38,7 @@ function start() {
 	tl.add("f4-in", "+=" + COPY);
 	tl.add(f4(), "f4-in");
 
-	// tl.gotoAndPlay("f4-in")
+	tl.gotoAndPlay("f4-in");
 
 	// return
 
@@ -95,20 +95,6 @@ function f4() {
 	return tl;
 }
 
-function f5() {
-	var tl = new TimelineMax();
-	tl.set(".frame5", { opacity: 1 });
-	tl.to(".frame4", .5, { x: wMinus }, 0);
-	tl.to(".frame5", .5, { x: -0 }, 0);
-
-	tl.from(".frame5 .line", .5, { height: 0 }, "-=.3");
-
-	tl.from(".frame5 .t5_a", .3, { opacity: 0 }, "+=.2");
-	tl.from(".frame5 .t5_b", .3, { opacity: 0 }, "+=.3");
-
-	return tl;
-}
-
 function stag(list) {
 	var time = arguments.length <= 1 || arguments[1] === undefined ? .01 : arguments[1];
 	var delay = arguments.length <= 2 || arguments[2] === undefined ? .2 : arguments[2];
@@ -126,7 +112,7 @@ function stag(list) {
 function end() {
 	var tl = new TimelineMax();
 	tl.set(".frame6", { opacity: 1 });
-	tl.to(".frame3", .5, { x: wMinus }, "end-in");
+	tl.to(".frame4", .5, { x: wMinus }, "end-in");
 	tl.to(".frame6", .5, { x: -0 }, "end-in");
 	tl.from(".end_txt", .3, { opacity: 0 }, "+=.3");
 	tl.from(".end_cta", .3, { opacity: 0 }, "+=.3");

@@ -31,7 +31,7 @@ function start(){
 	
 	
 	
-	// tl.gotoAndPlay("f4-in")
+	tl.gotoAndPlay("f4-in")
 
 	// return
 	
@@ -102,21 +102,6 @@ function f4(){
 }
 
 
-function f5(){
-	const tl = new TimelineMax()	
-	tl.set(".frame5", {opacity:1})
-	tl.to(".frame4", .5, {x:wMinus}, 0)	
-	tl.to(".frame5", .5, {x:-0}, 0) 
-	
-
-	tl.from(".frame5 .line", .5, {height:0}, "-=.3") 
-
-	tl.from(".frame5 .t5_a", .3, {opacity:0}, "+=.2") 
-	tl.from(".frame5 .t5_b", .3, {opacity:0}, "+=.3") 
-
-	return tl
-}
-
 function stag(list, time=.01, delay=.2){
 	const tl = new TimelineMax()
 
@@ -131,7 +116,7 @@ function stag(list, time=.01, delay=.2){
 function end(){
 	const tl = new TimelineMax()
 	tl.set(".frame6", {opacity:1})
-	tl.to(".frame3", .5, {x:wMinus}, "end-in")	
+	tl.to(".frame4", .5, {x:wMinus}, "end-in")	
 	tl.to(".frame6", .5, {x:-0}, "end-in")	
 	tl.from(".end_txt", .3, {opacity:0}, "+=.3")
 	tl.from(".end_cta", .3, {opacity:0}, "+=.3")
