@@ -21,9 +21,7 @@ function start(){
 	tl.add("f2-in", "+=1.5")
 	tl.add(f2(), "f2-in")
 			
-	// tl.add("f3-in", "+=.7")
-	// tl.add(f3(), "f3-in")
-
+	
 	
 
 	tl.add("f4-in", `+=${COPY}`)
@@ -56,6 +54,7 @@ function start(){
 
 function f2(){
 	const tl = new TimelineMax()	
+	tl.set(".frame2", {opacity:1})
 	tl.to(".frame1", .5, {x:-(w)}, 0)	
 	tl.from(".frame2", .5, {x:wPlus}, 0)
 	tl.from([".logo", ".plus"], .6, {x:wPlus}, 0)
@@ -75,7 +74,7 @@ function f2(){
 
 function f4(){
 	const tl = new TimelineMax()	
-	
+	tl.set(".frame4", {opacity:1})
 	tl.to(".frame2", .5, {x:wMinus}, "f4-in") 
 	tl.to(".frame4", .5, {x:0}, "f4-in")
 	tl.add(stag(["t4_a", "t4_b", "t4_c", "t4_d"]))
@@ -88,6 +87,7 @@ function f4(){
 
 function f5(){
 	const tl = new TimelineMax()	
+	tl.set(".frame5", {opacity:1})
 	tl.to(".frame4", .5, {x:wMinus}, 0)	
 	tl.to(".frame5", .5, {x:-0}, 0) 
 	
@@ -113,6 +113,7 @@ function stag(list){
 
 function end(){
 	const tl = new TimelineMax()
+	tl.set(".frame6", {opacity:1})
 	tl.to(".frame5", .5, {x:wMinus}, "end-in")	
 	tl.to(".frame6", .5, {x:-0}, "end-in")	
 	tl.from(".end_txt", .3, {opacity:0}, "+=.3")
