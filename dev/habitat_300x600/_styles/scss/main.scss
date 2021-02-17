@@ -1,0 +1,94 @@
+
+
+@import '../../../_common/styles/common.scss';
+
+.tri{
+	width: 130px;
+	height: 100%;
+	background-color: green;
+	background-color: #e82011;
+	@include pos(0, 0);
+	clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+}
+
+.line{
+	width: 10px;
+	height: 900px;
+}
+
+.frame {
+	opacity: 1;
+}
+
+.frame1{
+	@include pos(0, 0);
+	
+	background-color: #e82011;
+	.tri{
+		@include pos(300, 0);
+	}
+	
+}
+
+
+
+.frame2{
+	background-color: #e82011;
+	@include pos(0, 0);
+	// opacity: 0
+}
+
+.frame3{
+	@include pos(0, 0);
+}
+
+
+.frame4{
+	@include pos(430, 0);
+	.tri{
+		@include pos-scale(-130, 0, -1);		
+	}
+
+	background-color: #e82011;
+	.line.ver{
+		@include pos-scale(54, 323, .5);
+	}
+
+	.line.hor{
+		@include pos-scale-rotate(265, 200, .5, 270);
+	}
+}
+
+.frame5{
+	@include pos(1200, 0);
+	background-color: #e82011;
+	
+
+	.line.ver{
+		@include pos-scale-rotate(267, -37, .5, 0);
+		
+	}
+
+	.line.hor{
+		@include pos-scale-rotate(-62, 497, .5, 270);
+		height: 240px;
+	}
+
+}
+
+.frame6{
+	@include pos(300, 0);
+	background-color: #e82011;
+}
+
+.logo{
+	// @include pos-scale(0, 78, .5);
+}
+
+#banner{	
+	// background-color: red;
+	width: 300px;
+	height: 600px;
+	// overflow: visible;
+}
+
