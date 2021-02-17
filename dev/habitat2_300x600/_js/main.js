@@ -78,8 +78,7 @@ function f2(){
 function f4(){
 	const tl = new TimelineMax()	
 	tl.set(".frame4", {opacity:1})
-	tl.to(".frame2", .5, {x:-430}, "f4-in") 
-	
+	tl.to(".frame2", 1.5, {x:-430}, "f4-in") 	
 	tl.to(".frame4", .5, {x:0}, "f4-in")
 	tl.add(stag(["tag_1", "tag_2", "tag_3"]))
 

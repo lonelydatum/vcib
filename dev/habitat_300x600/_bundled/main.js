@@ -41,7 +41,7 @@ function start() {
 	tl.add("f5-in", "-=.1");
 	tl.add(f5(), "f5-in");
 
-	// tl.gotoAndPlay("f5-in")
+	// tl.gotoAndPlay("f4-in")
 
 	// return
 
@@ -72,8 +72,7 @@ function f2() {
 function f4() {
 	var tl = new TimelineMax();
 	tl.set(".frame4", { opacity: 1 });
-	tl.to(".frame2", .5, { x: -430 }, "f4-in");
-
+	tl.to(".frame2", 1.5, { x: -430 }, "f4-in");
 	tl.to(".frame4", .5, { x: 0 }, "f4-in");
 	tl.add(stag(["t4_a", "t4_b", "t4_c", "t4_d"]));
 
