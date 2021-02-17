@@ -44,7 +44,7 @@ function start(){
 	tl.add("end-in", "+=1")
 	tl.add(end(), "end-in")
 	
-	// tl.gotoAndPlay("f2-in")
+	tl.gotoAndPlay("f2-in")
 	
 	
 	
@@ -64,6 +64,7 @@ function f2(){
 	tl.to(".frame2 .tri_1", .5, {x:-130}, "out")
 	tl.from(".frame2 .tri_2", .5, {x:"+=130"}, "out")
 	tl.to( ".photo", 3, {opacity:0}, "out" )
+	tl.from( ".photo_blur", .5, {opacity:0}, "out" )
 
 	tl.add(stag(["t3_a", "t3_b", "t3_c", "t3_d", "t3_e", "t3_f", "t3_g"]), 3.3)
 
