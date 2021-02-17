@@ -25,7 +25,7 @@ var wMinus = "-=" + w;
 var tri = document.getElementById("tri");
 var tri_width = tri.offsetWidth;
 
-var COPY = 6;
+var COPY = 5;
 
 function start() {
 
@@ -63,7 +63,7 @@ function f2() {
 	tl.to(".photo", 3, { opacity: 0 }, "out");
 	tl.from(".photo_blur", .5, { opacity: 0 }, "out");
 
-	tl.add(stag(["t3_a", "t3_b", "t3_c", "t3_d", "t3_e", "t3_f", "t3_g"]), 3.3);
+	tl.add(stag(["t3_a", "t3_b", "t3_c", "t3_d", "t3_e", "t3_f", "t3_g"], .3, .3), 3.3);
 
 	// tl.from(".t3", .3, {opacity:0}, 3.3)
 	return tl;
@@ -96,11 +96,14 @@ function f5() {
 }
 
 function stag(list) {
+	var time = arguments.length <= 1 || arguments[1] === undefined ? .01 : arguments[1];
+	var delay = arguments.length <= 2 || arguments[2] === undefined ? .12 : arguments[2];
+
 	var tl = new TimelineMax();
 
 	list.map(function (abcd) {
 		console.log(abcd);
-		tl.from("." + abcd, .01, { opacity: 0 }, "+=.12");
+		tl.from("." + abcd, time, { opacity: 0 }, "+=" + delay);
 	});
 
 	return tl;

@@ -10,7 +10,7 @@ const tri = document.getElementById("tri")
 const tri_width = tri.offsetWidth
 
 
-const COPY = 6
+const COPY = 5
 
 
 function start(){
@@ -68,7 +68,7 @@ function f2(){
 	tl.to( ".photo", 3, {opacity:0}, "out" )
 	tl.from( ".photo_blur", .5, {opacity:0}, "out" )
 
-	tl.add(stag(["t3_a", "t3_b", "t3_c", "t3_d", "t3_e", "t3_f", "t3_g"]), 3.3)
+	tl.add(stag(["t3_a", "t3_b", "t3_c", "t3_d", "t3_e", "t3_f", "t3_g"], .3, .3), 3.3)
 
 	// tl.from(".t3", .3, {opacity:0}, 3.3)
 	return tl
@@ -103,12 +103,12 @@ function f5(){
 	return tl
 }
 
-function stag(list){
+function stag(list, time=.01, delay=.12){
 	const tl = new TimelineMax()
 
 	list.map(abcd=>{
 		console.log(abcd);
-		tl.from(`.${abcd}`, .01, {opacity:0}, "+=.12")
+		tl.from(`.${abcd}`, time, {opacity:0}, `+=${delay}`)
 	})
 
 	return tl
