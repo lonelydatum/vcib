@@ -39,7 +39,7 @@ function log_free(projectName){
     const splited = projectName.split("_")
     
     
-    const size = splited[4]
+    const size = splited[splited.length-1]
     
 
     var images = ["./dev/_common/images/"+size+"/backup-image.jpg"]
