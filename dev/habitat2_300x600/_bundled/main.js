@@ -38,7 +38,7 @@ function start() {
 	tl.add("f4-in", "+=" + COPY);
 	tl.add(f4(), "f4-in");
 
-	tl.gotoAndPlay("f4-in");
+	// tl.gotoAndPlay("f4-in")
 
 	// return
 
