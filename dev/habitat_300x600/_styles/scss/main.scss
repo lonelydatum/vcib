@@ -21,7 +21,7 @@
 }
 
 .frame1{
-	
+
 	@include pos(0, 0);	
 	background-color: #e82011;
 }
@@ -29,7 +29,7 @@
 
 
 .frame2{
-	background-color: #e82011;
+	background-color: white;
 	@include pos(0, 0);
 
 	.tri_2{

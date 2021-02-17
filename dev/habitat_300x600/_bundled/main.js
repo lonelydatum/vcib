@@ -46,7 +46,7 @@ function start() {
 	tl.add("end-in", "+=1");
 	tl.add(end(), "end-in");
 
-	tl.gotoAndPlay("f2-in");
+	// tl.gotoAndPlay("f2-in")
 }
 
 function f2() {
