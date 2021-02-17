@@ -63,7 +63,7 @@ function f2() {
 	tl.to(".photo", 3, { opacity: 0 }, "out");
 	tl.from(".photo_blur", .5, { opacity: 0 }, "out");
 
-	tl.add(stag(["t3_a", "t3_b", "t3_c", "t3_d", "t3_e", "t3_f", "t3_g"], .3, .3), 3.3);
+	tl.add(stag(["t3_a", "t3_b", "t3_c", "t3_d", "t3_e", "t3_f"], .3, .3), 3.3);
 
 	// tl.from(".t3", .3, {opacity:0}, 3.3)
 	return tl;
