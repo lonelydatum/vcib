@@ -11,7 +11,7 @@ const tri_width = tri.offsetWidth
 
 
 const COPY = 5
-const LINE = 1000
+const LINE = 2000
 
 function start(){
 	const startTime = new Date().getTime()
@@ -23,7 +23,7 @@ function start(){
 
 	tl.from(".t1", .4, {x:"+=300"}, 0)
 		
-	tl.add("f2-in", "+=1.1")
+	tl.add("f2-in", "+=1.4")
 	tl.add(f2(), "f2-in")
 			
 	
@@ -34,6 +34,17 @@ function start(){
 	
 	
 	
+	
+	
+	// tl.gotoAndPlay("f4-in")
+
+	// return
+	
+
+	// tl.add("f5-in", "+=.6")
+	// tl.add(f5(), "f5-in")
+	
+
 		
 
 	

@@ -26,7 +26,7 @@ var tri = document.getElementById("tri");
 var tri_width = tri.offsetWidth;
 
 var COPY = 5;
-var LINE = 1000;
+var LINE = 2000;
 
 function start() {
 	var startTime = new Date().getTime();
@@ -38,11 +38,18 @@ function start() {
 
 	tl.from(".t1", .4, { x: "+=300" }, 0);
 
-	tl.add("f2-in", "+=1.1");
+	tl.add("f2-in", "+=1.4");
 	tl.add(f2(), "f2-in");
 
 	tl.add("f4-in", "+=" + COPY);
 	tl.add(f4(), "f4-in");
+
+	// tl.gotoAndPlay("f4-in")
+
+	// return
+
+	// tl.add("f5-in", "+=.6")
+	// tl.add(f5(), "f5-in")
 
 	tl.add("end-in", "+=1");
 	tl.add(end(), "end-in");
