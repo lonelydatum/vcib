@@ -1,0 +1,68 @@
+
+
+@import '../../../_common/styles/common.scss';
+
+.tri{
+	width: 130px;
+	height: 100%;
+	background-color: green;
+	background-color: #e82011;
+	@include pos(0, 0);
+	clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+}
+
+
+.frame {
+	opacity: 0;
+}
+
+.frame1{
+	@include pos(0, 0);	
+	background-color: #e82011;
+}
+
+.frame2{
+	background-color: white;
+	@include pos(0, 0);
+}
+
+.frame3{
+	@include pos(430, 0);
+	background-color: #e82011;
+	.tri_2{
+		@include pos-scale(-130, 0, -1);		
+	}
+	
+	.north{
+		@include pos-scale(198, 56, .5);
+	}
+
+	.east{
+		@include pos-scale(256, 56, .5);		
+	}
+	.ne{
+		@include pos(12, -12);
+	}
+
+	.south{
+		@include pos-scale(1, 395, .5);
+	}
+
+	.sw{
+		@include pos(32, 144);
+	}
+}
+
+
+.frameEnd{
+	@include pos(300, 0);
+	background-color: #e82011;
+}
+
+
+
+#banner{		
+	width: 300px;
+	height: 600px;	
+}
+
