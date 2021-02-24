@@ -36,7 +36,7 @@ function start(){
 	
 
 	tl.add("f3-in", `+=${COPY}`)
-	// tl.add(f3(), "f3-in")
+	
 	tl.add(f3a(), "f3-in")
 	tl.add(f3b())
 	
@@ -61,6 +61,29 @@ function start(){
 	
 
 
+}
+
+
+
+
+function f2(){
+	const tl = new TimelineMax()	
+	tl.set(".frame2", {opacity:1})
+	tl.to(".frame1", .4, {x:-(w)}, 0)	
+	tl.from(".frame2", .4, {x:wPlus}, 0)
+	tl.from([".logo", ".plus"], .6, {x:wPlus}, 0)
+
+	tl.add("out", "+=.9")
+	tl.to([".logo", ".plus"], .6, {opacity:0, x:`-=${size.w}`}, "out")
+	tl.to(".frame2 .tri_1", .5, {x:-130}, "out")
+	tl.from(".frame2 .tri_2", .5, {x:size.w}, "out")
+	
+	tl.to( ".photo", .3, {opacity:0}, "out" )
+	tl.from( ".photo_blur", .5, {opacity:0}, "out" )
+	tl.from( ".t3", .5, {opacity:0}, "+=.1" )
+
+	
+	return tl
 }
 
 
@@ -91,53 +114,6 @@ function f3b(){
 	return tl
 }
 
-
-function f2(){
-	const tl = new TimelineMax()	
-	tl.set(".frame2", {opacity:1})
-	tl.to(".frame1", .4, {x:-(w)}, 0)	
-	tl.from(".frame2", .4, {x:wPlus}, 0)
-	tl.from([".logo", ".plus"], .6, {x:wPlus}, 0)
-
-	tl.add("out", "+=.9")
-	tl.to([".logo", ".plus"], .6, {opacity:0, x:`-=${size.w}`}, "out")
-	tl.to(".frame2 .tri_1", .5, {x:-130}, "out")
-	tl.from(".frame2 .tri_2", .5, {x:size.w}, "out")
-	
-	tl.to( ".photo", .3, {opacity:0}, "out" )
-	tl.from( ".photo_blur", .5, {opacity:0}, "out" )
-	tl.from( ".t3", .5, {opacity:0}, "+=.1" )
-
-	
-	return tl
-}
-
-
-// function f3(){
-// 	const tl = new TimelineMax()	
-// 	tl.set(".frame3", {opacity:1})
-// 	tl.to(".frame2", .5, {x:`${-size.w-tri_width}`}, "f4-in") 	
-// 	tl.to(".frame3", .5, {x:0}, "f4-in")
-// 	tl.add(stag(["tag_1", "tag_2", "tag_3"]))
-
-	
-// 	const tl_line1 = new TimelineMax()	
-// 	tl_line1.from(".north", size.w/LINE, {scaleX:0}) 
-// 	tl_line1.from(".east", size.h/LINE, {scaleY:0}) 
-
-// 	const tl_line2 = new TimelineMax()	
-// 	tl_line2.from(".west", size.h/LINE, {scaleY:0}) 
-// 	tl_line2.from(".south", size.w/LINE, {scaleX:0}) 
-	
-
-// 	tl.add("lines", "+=.2")
-// 	tl.add(tl_line1, "lines")
-// 	tl.add(tl_line2, "lines")
-
-// 	tl.add(stag(["tag_4", "tag_5"]), "+=0")
-
-// 	return tl
-// }
 
 
 
@@ -170,3 +146,31 @@ function stag(list, time=.01, delay=.2){
 
 module.exports = {};
 
+
+
+
+// function f3(){
+// 	const tl = new TimelineMax()	
+// 	tl.set(".frame3", {opacity:1})
+// 	tl.to(".frame2", .5, {x:`${-size.w-tri_width}`}, "f4-in") 	
+// 	tl.to(".frame3", .5, {x:0}, "f4-in")
+// 	tl.add(stag(["tag_1", "tag_2", "tag_3"]))
+
+	
+// 	const tl_line1 = new TimelineMax()	
+// 	tl_line1.from(".north", size.w/LINE, {scaleX:0}) 
+// 	tl_line1.from(".east", size.h/LINE, {scaleY:0}) 
+
+// 	const tl_line2 = new TimelineMax()	
+// 	tl_line2.from(".west", size.h/LINE, {scaleY:0}) 
+// 	tl_line2.from(".south", size.w/LINE, {scaleX:0}) 
+	
+
+// 	tl.add("lines", "+=.2")
+// 	tl.add(tl_line1, "lines")
+// 	tl.add(tl_line2, "lines")
+
+// 	tl.add(stag(["tag_4", "tag_5"]), "+=0")
+
+// 	return tl
+// }
