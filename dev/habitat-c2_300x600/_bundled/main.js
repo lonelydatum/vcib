@@ -105,7 +105,7 @@ function f3b() {
 function end() {
 	var tl = new TimelineMax();
 	tl.set(".frameEnd", { opacity: 1 });
-	tl.to(".frame3", .4, { x: wMinus }, "end-in");
+	tl.to(".frame3b", .4, { x: wMinus }, "end-in");
 	tl.to(".frameEnd", .4, { x: -0 }, "end-in");
 
 	tl.from(".end_txt", .3, { opacity: 0 }, "+=.3");
