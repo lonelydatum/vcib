@@ -10,7 +10,7 @@ const tri = document.getElementById("tri")
 const tri_width = tri.offsetWidth
 console.log(tri_width);
 
-const COPY = 4
+const COPY = 3.5
 const LINE = 2000
 
 function start(){
@@ -29,15 +29,15 @@ function start(){
 
 	tl.from(".t1", .4, {x:"+=300"}, 0)
 		
-	tl.add("f2-in", "+=1.4")
+	tl.add("f2-in", "+=1.3")
 	tl.add(f2(), "f2-in")
 			
 	
 	
 
-	tl.add("f3-in", `+=${COPY}`)
+	tl.add("f3a-in", `+=${COPY}`)
 	
-	tl.add(f3a(), "f3-in")
+	tl.add(f3a(), "f3a-in")
 	tl.add(f3b())
 	
 	
@@ -48,7 +48,7 @@ function start(){
 		
 
 	
-	tl.add("end-in", "+=1")
+	tl.add("end-in", "+=.5")
 	tl.add(end(), "end-in")
 	
 	
@@ -73,14 +73,15 @@ function f2(){
 	tl.from(".frame2", .4, {x:wPlus}, 0)
 	tl.from([".logo", ".plus"], .6, {x:wPlus}, 0)
 
-	tl.add("out", "+=.9")
-	tl.to([".logo", ".plus"], .6, {opacity:0, x:`-=${size.w}`}, "out")
-	tl.to(".frame2 .tri_1", .5, {x:-130}, "out")
-	tl.from(".frame2 .tri_2", .5, {x:size.w}, "out")
+	tl.add("out", "+=.7")
+	tl.to([".logo", ".plus"], .3, {opacity:0, x:`-=${size.w}`}, "out")
+	tl.to(".frame2 .tri_1", .3, {x:-130}, "out")
+	
 	
 	tl.to( ".photo", .3, {opacity:0}, "out" )
-	tl.from( ".photo_blur", .5, {opacity:0}, "out" )
-	tl.from( ".t3", .5, {opacity:0}, "+=.1" )
+	tl.from( ".photo_blur", .3, {opacity:0}, "out" )
+	tl.from( ".t3_a", .3, {opacity:0}, "+=.1" )
+	tl.from( ".t3_b", .3, {opacity:0}, "+=1" )
 
 	
 	return tl
@@ -91,6 +92,7 @@ function f3a(){
 	const tl = new TimelineMax()	
 	tl.set(".frame3a", {opacity:1})
 	tl.to(".frame2", .4, {x:wMinus}, 0) 
+	tl.from(".frame2 .tri_2", .4, {x:size.w}, 0)
 	tl.from(".frame3a", .4, {x:size.w}, 0)
 	tl.add(stag(["t4_a", "t4_b", "t4_c", "t4_d"]))
 
@@ -123,10 +125,10 @@ function end(){
 	tl.to(".frame3b", .4, {x:wMinus}, "end-in")	
 	tl.to(".frameEnd", .4, {x:-0}, "end-in")	
 
-	tl.from(".end_txt", .3, {opacity:0}, "+=.3")
-	tl.from(".end_cta", .3, {opacity:0}, "+=.3")
-	tl.from(".end_logo", .3, {opacity:0}, "+=.3")	
-	tl.from(".end_tag", .5, {opacity:0}, "+=.5")
+	tl.from(".end_txt", .3, {opacity:0}, "+=.2")
+	tl.from(".end_cta", .3, {opacity:0}, "+=.1")
+	tl.from(".end_logo", .3, {opacity:0}, "+=.1")	
+	tl.from(".end_tag", .3, {opacity:0}, "+=.1")
 	return tl
 }
 
