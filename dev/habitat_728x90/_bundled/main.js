@@ -211,7 +211,7 @@ function f3b_() {
 function end_() {
 	var tl = new TimelineMax();
 	tl.set(".frameEnd", { opacity: 1 });
-	tl.to(".frame3a", TIME_FRAME_SLIDE, { x: wMinus }, "end-in");
+	tl.to(".frame3a", TIME_FRAME_SLIDE, { x: wMinus, opacity: 0 }, "end-in");
 	tl.to(".frameEnd", TIME_FRAME_SLIDE, { x: -0 }, "end-in");
 
 	tl.from(".end_txt", .3, { opacity: 0 }, "+=.2");
