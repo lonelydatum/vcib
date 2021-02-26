@@ -136,7 +136,7 @@ var h = _commonJsCommonJs.size.h;
 var wPlus = "+=" + w;
 var wMinus = "-=" + w;
 
-var TIME_FRAME_SLIDE = 3.5;
+var TIME_FRAME_SLIDE = .5;
 
 function start() {
 
@@ -165,7 +165,7 @@ function start() {
 
 	tl.from(".f2_blurb", .5, { opacity: 0 }, "+=.1");
 
-	tl.add("f3a-in", "+=1");
+	tl.add("f3a-in", "+=3.2");
 	tl.add(f3a_(), "f3a-in");
 
 	tl.add("f3b-in", "+=1");

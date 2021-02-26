@@ -6,7 +6,7 @@ const {w, h} = size
 const wPlus = `+=${w}`
 const wMinus = `-=${w}`
 
-const TIME_FRAME_SLIDE = 3.5;
+const TIME_FRAME_SLIDE = .5;
 
 function start(){
 	
@@ -39,7 +39,7 @@ function start(){
 
 	tl.from(".f2_blurb", .5, {opacity:0}, "+=.1")
 
-	tl.add("f3a-in", "+=1")
+	tl.add("f3a-in", "+=3.2")
 	tl.add(f3a_(), "f3a-in")
 
 
