@@ -165,7 +165,7 @@ function start() {
 
 	tl.from(".f2_blurb", .5, { opacity: 0 }, "+=.1");
 
-	tl.add("f3a-in", "+=3.2");
+	tl.add("f3a-in", "+=4");
 	tl.add(f3a_(), "f3a-in");
 
 	// tl.gotoAndPlay("f3a-in")
@@ -178,7 +178,7 @@ function start() {
 
 function f3a_() {
 	var x = 728;
-	var time = .8;
+	var time = .65;
 	var tl = new TimelineMax();
 	tl.set(".frame3a", { opacity: 1 });
 	tl.set([".frame3a .big-red", ".f3a_1", ".f3a_2"], { x: _commonJsCommonJs.size.w });
@@ -196,23 +196,11 @@ function f3a_() {
 	return tl;
 }
 
-function f3b_() {
-	var tl = new TimelineMax();
-	tl.set(".frame3b", { opacity: 1 });
-	tl.to(".frame3a", TIME_FRAME_SLIDE, { x: wMinus }, 0);
-	tl.from(".frame3b", TIME_FRAME_SLIDE, { x: _commonJsCommonJs.size.w }, 0);
-
-	tl.from(".frame3b .f3b_1", .3, { opacity: 0 }, "+=0");
-	tl.from(".frame3b .f3b_2", .3, { opacity: 0 }, "+=.2");
-
-	return tl;
-}
-
 function end_() {
 	var tl = new TimelineMax();
 	tl.set(".frameEnd", { opacity: 1 });
-	tl.to(".frame3a", TIME_FRAME_SLIDE, { x: wMinus, opacity: 0 }, "end-in");
-	tl.to(".frameEnd", TIME_FRAME_SLIDE, { x: -0 }, "end-in");
+	tl.to(".frame3a", .3, { opacity: 0 }, "end-in");
+	tl.to(".frameEnd", .4, { x: -0 });
 
 	tl.from(".end_txt", .3, { opacity: 0 }, "+=.2");
 	tl.from(".end_cta", .3, { opacity: 0 }, "+=.1");
