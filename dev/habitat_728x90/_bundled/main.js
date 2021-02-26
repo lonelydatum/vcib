@@ -177,17 +177,19 @@ function start() {
 }
 
 function f3a_() {
-	var x = 350;
+	var x = 728;
+	var time = .8;
 	var tl = new TimelineMax();
 	tl.set(".frame3a", { opacity: 1 });
-	tl.set(".frame3a .big-red", { x: _commonJsCommonJs.size.w });
-	tl.to(".frame2", .6, { x: -x }, 0);
-	tl.to(".frame3a .big-red", .4, { x: _commonJsCommonJs.size.w - x }, 0);
-	tl.add((0, _commonJsCommonJs.stag)(["f3a_1", "f3a_2"]));
+	tl.set([".frame3a .big-red", ".f3a_1", ".f3a_2"], { x: _commonJsCommonJs.size.w });
+	tl.to(".frame2", time, { x: -x }, 0);
+	tl.to(".frame3a .big-red", time, { x: _commonJsCommonJs.size.w - x }, 0);
+	tl.to([".f3a_1", ".f3a_2"], time, { x: _commonJsCommonJs.size.w - x }, 0);
+	// tl.add(stag(["f3a_1", "f3a_2"]))
 
 	tl.add("leave", "+=1");
 	tl.to(".frame3a .big-red", .3, { x: 0 }, "leave");
-	tl.to([".f3a_1", ".f3a_2"], .3, { opacity: 0 }, "leave");
+	tl.to([".f3a_1", ".f3a_2"], .3, { opacity: 0, x: "-=200" }, "leave");
 
 	tl.add((0, _commonJsCommonJs.stag)(["f3b_1", "f3b_2"]), "+=.1");
 
