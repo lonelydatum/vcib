@@ -220,54 +220,14 @@ sup {
   position: absolute;
 }
 
+.frame.frame3a {
+  background-color: transparent;
+}
+
 .frame.frame3a .tri_2 {
   -webkit-transform: translate(-34px, 0px) scale(-1, -1);
   -ms-transform: translate(-34px, 0px) scale(-1, -1);
   transform: translate(-34px, 0px) scale(-1, -1);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-  position: absolute;
-}
-
-.frame.frame3a .line.ver {
-  -webkit-transform: translate(79px, 180px) scale(0.5, 0.5);
-  -ms-transform: translate(79px, 180px) scale(0.5, 0.5);
-  transform: translate(79px, 180px) scale(0.5, 0.5);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-  position: absolute;
-}
-
-.frame.frame3a .line.hor {
-  -webkit-transform: translate(260px, 76px) scale(0.5) rotate(270deg);
-  -ms-transform: translate(260px, 76px) scale(0.5) rotate(270deg);
-  transform: translate(260px, 76px) scale(0.5) rotate(270deg);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-  position: absolute;
-}
-
-.frame.frame3b .line.ver {
-  -webkit-transform: translate(269px, -6px) scale(0.5) rotate(0deg);
-  -ms-transform: translate(269px, -6px) scale(0.5) rotate(0deg);
-  transform: translate(269px, -6px) scale(0.5) rotate(0deg);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-  position: absolute;
-}
-
-.frame.frame3b .line.hor {
-  -webkit-transform: translate(-53px, 212px) scale(0.5) rotate(270deg);
-  -ms-transform: translate(-53px, 212px) scale(0.5) rotate(270deg);
-  transform: translate(-53px, 212px) scale(0.5) rotate(270deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
