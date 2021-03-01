@@ -168,15 +168,17 @@ function start() {
 
 	tl.add(end_(), "+=1");
 
-	// tl.gotoAndPlay("f3a-in")
+	// tl.gotoAndPlay("f3-in")
 }
 
 function f3a_() {
 	var tl = new TimelineMax();
+	tl.set([".f3a_1", ".f3a_2"], { x: _commonJsCommonJs.size.w });
 	tl.set(".frame3a", { opacity: 1 });
-	tl.to(".frame2", TIME_FRAME_SLIDE, { x: wMinus }, 0);
-	tl.from(".frame3a", TIME_FRAME_SLIDE, { x: _commonJsCommonJs.size.w }, 0);
-	tl.add((0, _commonJsCommonJs.stag)(["f3a_1", "f3a_2"]));
+	tl.to(".frame2", .6, { x: wMinus }, 0);
+	tl.from(".frame3a", .6, { x: _commonJsCommonJs.size.w }, 0);
+	tl.to([".f3a_1", ".f3a_2"], .6, { x: 0 }, 0);
+	// tl.add(stag(["f3a_1", "f3a_2"]))
 
 	return tl;
 }
@@ -184,7 +186,7 @@ function f3a_() {
 function f3b_() {
 	var tl = new TimelineMax();
 	tl.set(".frame3b", { opacity: 1 });
-	tl.to(".frame3a", TIME_FRAME_SLIDE, { x: wMinus }, 0);
+	tl.to(".frame3a", TIME_FRAME_SLIDE, { x: wMinus, opacity: 0 }, 0);
 	tl.from(".frame3b", TIME_FRAME_SLIDE, { x: _commonJsCommonJs.size.w }, 0);
 
 	tl.from(".frame3b .f3b_1", .3, { opacity: 0 }, "+=0");
