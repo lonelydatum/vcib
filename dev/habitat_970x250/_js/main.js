@@ -39,13 +39,15 @@ function start(){
 	tl.to(".photo", .4, {opacity:0}, "f3-in")
 	// tl.to(, .4, {x:"-=200"}, "f3-in")
 
-	tl.from(".f2_blurb", .5, {opacity:0}, "+=.1")
+	
+	tl.from( ".f2_blurb", .3, {opacity:0}, "+=.1" )
+	tl.from( ".f2_url", .3, {opacity:0}, "+=1" )
 
 	tl.add("f3a-in", "+=3.2")
-	tl.add(f3a(), "f3a-in")
+	tl.add(f3a(["f3a_1", "f3a_2"]), "f3a-in")
 
 
-	tl.add("f3b-in", "+=1")
+	tl.add("f3b-in", "+=.3")
 	tl.add(f3b(), "f3b-in")
 
 	tl.add(end(), "+=1")

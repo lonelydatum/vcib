@@ -91,10 +91,14 @@ function end_(){
 	tl.to(".frame3a", .3, {opacity:0}, "end-in")	
 	tl.to(".frameEnd", .4, {x:-0})	
 
+	// tl.from(".end_txt", .3, {opacity:0}, "+=.2")
+	// tl.from(".end_cta", .3, {opacity:0}, "+=.1")
+	// tl.from(".end_logo", .3, {opacity:0}, "+=.1")	
+	// tl.from(".end_tag", .3, {opacity:0}, "+=.1")
+
 	tl.from(".end_txt", .3, {opacity:0}, "+=.2")
-	tl.from(".end_cta", .3, {opacity:0}, "+=.1")
-	tl.from(".end_logo", .3, {opacity:0}, "+=.1")	
-	tl.from(".end_tag", .3, {opacity:0}, "+=.1")
+	tl.from([".end_cta", ".end_logo", ".end_tag"], .3, {opacity:0}, "+=.5")
+	
 	return tl
 }
 

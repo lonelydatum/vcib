@@ -19,7 +19,7 @@
 	}
 	.tri_1{
 		// background-color: blue;
-		@include pos(970, 0);
+		@include pos(969, 0);
 	}
 
 }
@@ -27,7 +27,8 @@
 
 .frame.frame3a{
 	.tri_2{
-		@include pos-scale(-90, 0, -1);			
+		@include pos-scale(-89, 0, -1);			
+		
 	}
 	.line.ver{
 		@include pos-scale(452, 167, .5);

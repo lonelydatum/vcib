@@ -121,6 +121,7 @@ img {
   height: inherit;
   opacity: 0;
   top: 0;
+  overflow: hidden;
   left: 0;
   background-color: #e82011;
 }
@@ -210,9 +211,9 @@ sup {
 }
 
 .frame2 .tri_1 {
-  -webkit-transform: translate(970px, 0px);
-  -ms-transform: translate(970px, 0px);
-  transform: translate(970px, 0px);
+  -webkit-transform: translate(969px, 0px);
+  -ms-transform: translate(969px, 0px);
+  transform: translate(969px, 0px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -221,9 +222,9 @@ sup {
 }
 
 .frame.frame3a .tri_2 {
-  -webkit-transform: translate(-90px, 0px) scale(-1, -1);
-  -ms-transform: translate(-90px, 0px) scale(-1, -1);
-  transform: translate(-90px, 0px) scale(-1, -1);
+  -webkit-transform: translate(-89px, 0px) scale(-1, -1);
+  -ms-transform: translate(-89px, 0px) scale(-1, -1);
+  transform: translate(-89px, 0px) scale(-1, -1);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;

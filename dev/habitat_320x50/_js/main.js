@@ -43,7 +43,7 @@ function start(){
 	tl.add("f3b-in", "+=1")
 	tl.add(f3b_(), "f3b-in")
 
-	tl.add(end_(), "+=1")
+	tl.add(end(), "+=1")
 
 	// tl.gotoAndPlay("f3-in")
 
@@ -86,18 +86,18 @@ function f3b_(){
 
 
 
-function end_(){
-	const tl = new TimelineMax()
-	tl.set(".frameEnd", {opacity:1})
-	tl.to(".frame3b", TIME_FRAME_SLIDE, {x:wMinus}, "end-in")	
-	tl.to(".frameEnd", TIME_FRAME_SLIDE, {x:-0}, "end-in")	
+// function end_(){
+// 	const tl = new TimelineMax()
+// 	tl.set(".frameEnd", {opacity:1})
+// 	tl.to(".frame3b", TIME_FRAME_SLIDE, {x:wMinus}, "end-in")	
+// 	tl.to(".frameEnd", TIME_FRAME_SLIDE, {x:-0}, "end-in")	
 
-	tl.from(".end_txt", .3, {opacity:0}, "+=.2")
-	tl.from(".end_cta", .3, {opacity:0}, "+=.1")
-	tl.from(".end_logo", .3, {opacity:0}, "+=.1")	
-	tl.from(".end_tag", .3, {opacity:0}, "+=.1")
-	return tl
-}
+// 	tl.from(".end_txt", .3, {opacity:0}, "+=.2")
+// 	tl.from(".end_cta", .3, {opacity:0}, "+=.1")
+// 	tl.from(".end_logo", .3, {opacity:0}, "+=.1")	
+// 	tl.from(".end_tag", .3, {opacity:0}, "+=.1")
+// 	return tl
+// }
 
 
 
