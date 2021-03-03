@@ -31,11 +31,11 @@
 		
 	}
 	.line.ver{
-		@include pos-scale(452, 167, .5);
+		@include pos-scale(195, 177, .5);
 	}
 
 	.line.hor{
-		@include pos-scale-rotate(695, 88, .5, 270);
+		@include pos-scale-rotate(436, 55, .5, 270);
 	}
 
 }
@@ -43,11 +43,11 @@
 .frame.frame3b{
 	
 	.line.ver{
-		@include pos-scale-rotate(918, -576, .5, 0);		
+		@include pos-scale-rotate(766, -582, .5, 0);		
 	}
 
 	.line.hor{
-		@include pos-scale-rotate(-20, 212, .5, 270);
+		@include pos-scale-rotate(-168, 202, .5, 270);
 		
 	}
 }

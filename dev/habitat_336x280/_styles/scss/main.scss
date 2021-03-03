@@ -6,22 +6,22 @@
 		@include pos-scale(-112, 0, -1);			
 	}
 	.line.ver{
-		@include pos-scale(88, 202, .5);
+		@include pos-scale(40, 162, .5);
 	}
 
 	.line.hor{
-		@include pos-scale-rotate(289, 84, .5, 270);
+		@include pos-scale-rotate(241, 46, .5, 270);
 	}
 
 }
 
 .frame.frame3b{
 	.line.ver{
-		@include pos-scale-rotate(300, -2, .5, 0);		
+		@include pos-scale-rotate(293, -2, .5, 0);		
 	}
 
 	.line.hor{
-		@include pos-scale-rotate(-60, 237, .5, 270);
+		@include pos-scale-rotate(-66, 238, .5, 270);
 		// height: 240px;
 	}
 }

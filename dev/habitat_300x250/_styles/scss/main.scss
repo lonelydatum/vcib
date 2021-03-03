@@ -1,24 +1,17 @@
-
-
 @import '../../../_common/styles/300x250.scss';
 
-
-
-
-
-
-
-
 .frame.frame3a{
+	
 	.tri_2{
-		@include pos-scale(-110, 0, -1);			
+		@include pos-scale(-110, 0, -1);
 	}
+
 	.line.ver{
-		@include pos-scale(79, 180, .5);
+		@include pos-scale(40, 143, .5);
 	}
 
 	.line.hor{
-		@include pos-scale-rotate(260, 76, .5, 270);
+		@include pos-scale-rotate(221, 41, .5, 270);
 	}
 
 }
@@ -26,13 +19,13 @@
 .frame.frame3b{
 	
 	.line.ver{
-		@include pos-scale-rotate(269, -6, .5, 0);		
+		@include pos-scale-rotate(258, -4, .5, 0);
 	}
 
 	.line.hor{
-		@include pos-scale-rotate(-53, 212, .5, 270);
-		
+		@include pos-scale-rotate(-63, 212, .5, 270);
 	}
+
 }
 
 

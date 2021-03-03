@@ -222,9 +222,9 @@ sup {
 }
 
 .frame.frame3a .line.ver {
-  -webkit-transform: translate(54px, 470px) scale(0.5, 0.5);
-  -ms-transform: translate(54px, 470px) scale(0.5, 0.5);
-  transform: translate(54px, 470px) scale(0.5, 0.5);
+  -webkit-transform: translate(45px, 467px) scale(0.5, 0.5);
+  -ms-transform: translate(45px, 467px) scale(0.5, 0.5);
+  transform: translate(45px, 467px) scale(0.5, 0.5);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -233,9 +233,9 @@ sup {
 }
 
 .frame.frame3a .line.hor {
-  -webkit-transform: translate(265px, 342px) scale(0.5) rotate(270deg);
-  -ms-transform: translate(265px, 342px) scale(0.5) rotate(270deg);
-  transform: translate(265px, 342px) scale(0.5) rotate(270deg);
+  -webkit-transform: translate(254px, 342px) scale(0.5) rotate(270deg);
+  -ms-transform: translate(254px, 342px) scale(0.5) rotate(270deg);
+  transform: translate(254px, 342px) scale(0.5) rotate(270deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -244,9 +244,9 @@ sup {
 }
 
 .frame.frame3b .line.ver {
-  -webkit-transform: translate(267px, -39px) scale(0.5) rotate(0deg);
-  -ms-transform: translate(267px, -39px) scale(0.5) rotate(0deg);
-  transform: translate(267px, -39px) scale(0.5) rotate(0deg);
+  -webkit-transform: translate(251px, 31px) scale(0.5) rotate(0deg);
+  -ms-transform: translate(251px, 31px) scale(0.5) rotate(0deg);
+  transform: translate(251px, 31px) scale(0.5) rotate(0deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -255,9 +255,9 @@ sup {
 }
 
 .frame.frame3b .line.hor {
-  -webkit-transform: translate(-540px, 643px) scale(0.5) rotate(270deg);
-  -ms-transform: translate(-540px, 643px) scale(0.5) rotate(270deg);
-  transform: translate(-540px, 643px) scale(0.5) rotate(270deg);
+  -webkit-transform: translate(-553px, 713px) scale(0.5) rotate(270deg);
+  -ms-transform: translate(-553px, 713px) scale(0.5) rotate(270deg);
+  transform: translate(-553px, 713px) scale(0.5) rotate(270deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
