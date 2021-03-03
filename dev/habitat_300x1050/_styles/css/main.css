@@ -207,7 +207,7 @@ sup {
 
 .line {
   width: 10px;
-  height: 1198px;
+  height: 1288px;
 }
 
 .frame.frame3a .tri_2 {
@@ -244,9 +244,9 @@ sup {
 }
 
 .frame.frame3b .line.ver {
-  -webkit-transform: translate(251px, 31px) scale(0.5) rotate(0deg);
-  -ms-transform: translate(251px, 31px) scale(0.5) rotate(0deg);
-  transform: translate(251px, 31px) scale(0.5) rotate(0deg);
+  -webkit-transform: translate(251px, -14px) scale(0.5) rotate(0deg);
+  -ms-transform: translate(251px, -14px) scale(0.5) rotate(0deg);
+  transform: translate(251px, -14px) scale(0.5) rotate(0deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -255,9 +255,9 @@ sup {
 }
 
 .frame.frame3b .line.hor {
-  -webkit-transform: translate(-553px, 713px) scale(0.5) rotate(270deg);
-  -ms-transform: translate(-553px, 713px) scale(0.5) rotate(270deg);
-  transform: translate(-553px, 713px) scale(0.5) rotate(270deg);
+  -webkit-transform: translate(-602px, 713px) scale(0.5) rotate(270deg);
+  -ms-transform: translate(-602px, 713px) scale(0.5) rotate(270deg);
+  transform: translate(-602px, 713px) scale(0.5) rotate(270deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;

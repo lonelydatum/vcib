@@ -17,11 +17,11 @@
 
 .frame.frame3b{
 	.line.ver{
-		@include pos-scale-rotate(293, -2, .5, 0);		
+		@include pos-scale-rotate(293, -3, .5, 0);		
 	}
 
 	.line.hor{
-		@include pos-scale-rotate(-66, 238, .5, 270);
+		@include pos-scale-rotate(-70, 239, .5, 270);
 		// height: 240px;
 	}
 }

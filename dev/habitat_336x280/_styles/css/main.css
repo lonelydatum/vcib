@@ -244,9 +244,9 @@ sup {
 }
 
 .frame.frame3b .line.ver {
-  -webkit-transform: translate(293px, -2px) scale(0.5) rotate(0deg);
-  -ms-transform: translate(293px, -2px) scale(0.5) rotate(0deg);
-  transform: translate(293px, -2px) scale(0.5) rotate(0deg);
+  -webkit-transform: translate(293px, -3px) scale(0.5) rotate(0deg);
+  -ms-transform: translate(293px, -3px) scale(0.5) rotate(0deg);
+  transform: translate(293px, -3px) scale(0.5) rotate(0deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -255,9 +255,9 @@ sup {
 }
 
 .frame.frame3b .line.hor {
-  -webkit-transform: translate(-66px, 238px) scale(0.5) rotate(270deg);
-  -ms-transform: translate(-66px, 238px) scale(0.5) rotate(270deg);
-  transform: translate(-66px, 238px) scale(0.5) rotate(270deg);
+  -webkit-transform: translate(-70px, 239px) scale(0.5) rotate(270deg);
+  -ms-transform: translate(-70px, 239px) scale(0.5) rotate(270deg);
+  transform: translate(-70px, 239px) scale(0.5) rotate(270deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
