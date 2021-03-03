@@ -143,7 +143,7 @@ function start() {
 	var tl = _init.tl;
 	var read = _init.read;
 
-	return;
+	// return
 
 	tl.add((0, _commonJsCommonJs.f2)(), "f2-in");
 
