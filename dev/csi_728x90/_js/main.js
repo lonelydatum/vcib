@@ -39,7 +39,7 @@ function start(){
 
 	tl.from(".f2_blurb", .5, {opacity:0}, "+=.1")
 
-	tl.add("f3a-in", "+=4")
+	tl.add("f3a-in", "+=2")
 	tl.add(f3a_(), "f3a-in")
 
 	// tl.gotoAndPlay("f3a-in")

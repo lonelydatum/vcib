@@ -10,7 +10,8 @@ var size = { w: banner.offsetWidth, h: banner.offsetHeight };
 TweenLite.defaultEase = Power3.easeOut;
 
 var read = {
-	habitat: 3.5
+	habitat: 3.5,
+	csi: 2
 };
 
 var w = size.w;
@@ -138,7 +139,7 @@ exports.stag = stag;
 var _commonJsCommonJs = require('../../_common/js/common.js');
 
 function start() {
-	var _init = (0, _commonJsCommonJs.init)("habitat");
+	var _init = (0, _commonJsCommonJs.init)("csi");
 
 	var tl = _init.tl;
 	var read = _init.read;

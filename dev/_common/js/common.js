@@ -4,7 +4,8 @@ const size = {w:banner.offsetWidth, h:banner.offsetHeight}
 TweenLite.defaultEase = Power3.easeOut
 
 const read = {
-	habitat: 3.5
+	habitat: 3.5,
+	csi: 2
 }
 
 

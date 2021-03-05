@@ -43,7 +43,7 @@ function start(){
 	tl.from( ".f2_blurb", .3, {opacity:0}, "+=.1" )
 	tl.from( ".f2_url", .3, {opacity:0}, "+=1" )
 
-	tl.add("f3a-in", "+=3.2")
+	tl.add("f3a-in", "+=2")
 	tl.add(f3a(["f3a_1", "f3a_2"]), "f3a-in")
 
 

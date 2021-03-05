@@ -10,7 +10,8 @@ var size = { w: banner.offsetWidth, h: banner.offsetHeight };
 TweenLite.defaultEase = Power3.easeOut;
 
 var read = {
-	habitat: 3.5
+	habitat: 3.5,
+	csi: 2
 };
 
 var w = size.w;

@@ -10,7 +10,8 @@ var size = { w: banner.offsetWidth, h: banner.offsetHeight };
 TweenLite.defaultEase = Power3.easeOut;
 
 var read = {
-	habitat: 3.5
+	habitat: 3.5,
+	csi: 2
 };
 
 var w = size.w;
@@ -175,7 +176,7 @@ function start() {
 	tl.from(".f2_blurb", .3, { opacity: 0 }, "+=.1");
 	tl.from(".f2_url", .3, { opacity: 0 }, "+=1");
 
-	tl.add("f3a-in", "+=3.2");
+	tl.add("f3a-in", "+=2");
 	tl.add((0, _commonJsCommonJs.f3a)(["f3a_1", "f3a_2"]), "f3a-in");
 
 	tl.add("f3b-in", "+=.3");
