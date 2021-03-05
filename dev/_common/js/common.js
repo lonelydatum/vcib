@@ -5,8 +5,8 @@ TweenLite.defaultEase = Power3.easeOut
 
 const read = {
 	habitat: 3.5,
-	csi: 2.7,
-	forum: 3.2
+	csi: 3.1,
+	forum: 3.4
 }
 
 
