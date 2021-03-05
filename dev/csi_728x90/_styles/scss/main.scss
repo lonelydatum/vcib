@@ -1,0 +1,49 @@
+
+
+@import '../../../_common/styles/728x90.scss';
+
+
+
+.frame{
+	// background-color: red;
+}
+
+.frame2{
+	.t1{
+		// @include pos-scale(-185, 0, .5);
+	}
+
+	.big-red{
+		// @include pos(-400, 0);
+	}
+	.tri_1{
+		// background-color: blue;
+		@include pos(727, 0);
+	}
+
+}
+
+
+.frame.frame3a{
+	background-color: transparent;
+	.big-red{
+		// @include pos(-400, 0);
+		// background-color: orange;
+	}
+
+	.tri_2{
+		@include pos-scale(-33, 0, -1);		
+		// background-color: blue;	
+	}
+	
+
+}
+
+.frame.frame3b{
+	
+	
+}
+
+
+
+

@@ -1,0 +1,27 @@
+@import '../../../_common/styles/336x280.scss';
+
+
+.frame.frame3a{
+	.tri_2{
+		@include pos-scale(-112, 0, -1);			
+	}
+	.line.ver{
+		@include pos-scale(40, 162, .5);
+	}
+
+	.line.hor{
+		@include pos-scale-rotate(241, 46, .5, 270);
+	}
+
+}
+
+.frame.frame3b{
+	.line.ver{
+		@include pos-scale-rotate(293, -3, .5, 0);		
+	}
+
+	.line.hor{
+		@include pos-scale-rotate(-70, 239, .5, 270);
+		// height: 240px;
+	}
+}

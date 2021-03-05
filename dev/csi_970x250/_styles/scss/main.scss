@@ -1,0 +1,57 @@
+
+
+@import '../../../_common/styles/970x250.scss';
+
+
+
+.frame{
+	// background-color: red;
+}
+
+.frame2{
+	.t1{
+		// @include pos-scale(-241, 0, .5);
+	}
+
+	.big-red{
+		// opacity: .3;
+		// @include pos(-534, 0);
+	}
+	.tri_1{
+		// background-color: blue;
+		@include pos(969, 0);
+	}
+
+}
+
+
+.frame.frame3a{
+	.tri_2{
+		@include pos-scale(-89, 0, -1);			
+		
+	}
+	.line.ver{
+		@include pos-scale(195, 177, .5);
+	}
+
+	.line.hor{
+		@include pos-scale-rotate(436, 55, .5, 270);
+	}
+
+}
+
+.frame.frame3b{
+	
+	.line.ver{
+		@include pos-scale-rotate(766, -582, .5, 0);		
+	}
+
+	.line.hor{
+		@include pos-scale-rotate(-168, 202, .5, 270);
+		
+	}
+}
+
+
+
+
