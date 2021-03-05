@@ -174,7 +174,7 @@ function start() {
 
 	tl.from(".f2_blurb", .5, { opacity: 0 }, "+=.1");
 
-	tl.add("f3a-in", "+=" + (read.csi + 1.2));
+	tl.add("f3a-in", "+=" + (_commonJsCommonJs.read.csi + 1.2));
 	tl.add(f3a_(), "f3a-in");
 
 	// tl.gotoAndPlay("f3a-in")

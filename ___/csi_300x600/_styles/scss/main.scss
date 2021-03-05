@@ -1,5 +1,13 @@
 @import '../../../_common/styles/300x600.scss';
 
+.f2_plus{
+	@include pos-scale(-5, 0, .5);
+	
+}
+
+.f2_logo{
+	@include pos-scale(8, 0, .5);
+}
 
 .frame.frame3a{
 	.tri_2{

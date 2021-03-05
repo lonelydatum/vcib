@@ -1,4 +1,4 @@
-import {size, init, f2, f3a, f3b, end, stag} from '../../_common/js/common.js'
+import {read, size, init, f2, f3a, f3b, end, stag} from '../../_common/js/common.js'
 
 
 
@@ -17,7 +17,7 @@ function start(){
 		// console.log(endTime-startTime);
 	}})
 
-	// return
+	
 
 	tl.set(".frameEnd", {x:w})
 
@@ -29,9 +29,9 @@ function start(){
 		
 	tl.add("f2-in", "+=1")
 	tl.to(".t1", .4, {x:-241}, "f2-in")
-	tl.to(".big-red", .4, {x:-534}, "f2-in")
+	tl.to(".big-red", .4, {x:-558}, "f2-in")
 	tl.from([".f2_logo", ".f2_plus"], .4, {opacity:0, x:"+=100"}, "f2-in")
-
+	
 
 	tl.add("f3-in", "+=1")
 	tl.to([".f2_logo", ".f2_plus"], .4, {opacity:0, x:"-=100"}, "f3-in")
