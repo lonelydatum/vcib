@@ -11,7 +11,7 @@ TweenLite.defaultEase = Power3.easeOut;
 
 var read = {
 	habitat: 3.5,
-	csi: 2.8,
+	csi: 2.9,
 	forum: 3.4
 };
 
