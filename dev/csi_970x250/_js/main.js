@@ -1,4 +1,4 @@
-import {size, init, f2, f3a, f3b, end, stag} from '../../_common/js/common.js'
+import {size, init, f2, f3a, f3b, end, stag, read} from '../../_common/js/common.js'
 
 
 
@@ -43,7 +43,7 @@ function start(){
 	tl.from( ".f2_blurb", .3, {opacity:0}, "+=.1" )
 	tl.from( ".f2_url", .3, {opacity:0}, "+=1" )
 
-	tl.add("f3a-in", "+=2")
+	tl.add("f3a-in", `+=${read.csi}`)
 	tl.add(f3a(["f3a_1", "f3a_2"]), "f3a-in")
 
 
