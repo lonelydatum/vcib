@@ -1,0 +1,30 @@
+@import '../../../_common/styles/300x600.scss';
+
+
+.frame.frame3a{
+	.tri_2{
+		@include pos-scale(-130, 0, -1);			
+	}
+	.line.ver{
+		@include pos-scale(48, 249, .5);
+	}
+
+	.line.hor{
+		@include pos-scale-rotate(252, 134, .5, 270);
+	}
+	.f3a_4{
+		display: none;
+	}
+
+}
+
+.frame.frame3b{
+	.line.ver{
+		@include pos-scale-rotate(246, -57, .5, 0);		
+	}
+
+	.line.hor{
+		@include pos-scale-rotate(-401, 472, .5, 270);
+		
+	}
+}
